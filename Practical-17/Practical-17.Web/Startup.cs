@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Practical_17.Web.Contracts;
+using Practical_17.Web.Repositories;
 using Practical_17.Web.Data;
 using System;
 using System.Collections.Generic;
@@ -34,6 +36,9 @@ namespace Practical_17.Web
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositories<>));
+            services.AddScoped(typeof(IStudentRepositories), typeof(StudentRepositories));
             services.AddControllersWithViews();
         }
 
