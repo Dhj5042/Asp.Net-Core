@@ -41,6 +41,7 @@ namespace Practical_16.Web
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositories<>));
             services.AddScoped(typeof(IStudentRepositories), typeof(StudentRepositories));
             services.AddControllersWithViews();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
