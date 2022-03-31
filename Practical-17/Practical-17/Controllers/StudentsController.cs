@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Practical_17.Contracts;
 using Practical_17.Model;
+using Practical_17.ViewModel;
 
 namespace Practical_17.Controllers
 {
@@ -15,17 +18,20 @@ namespace Practical_17.Controllers
     {
         private readonly AppContext _context;
         private readonly IStudentRepositories studentRepositories;
+        private readonly IMapper mapper;
 
-        public StudentsController(IStudentRepositories studentRepositories)
+        public StudentsController(IStudentRepositories studentRepositories
+            ,IMapper mapper)
         {
             this.studentRepositories = studentRepositories;
+            this.mapper = mapper;
         }
 
         // GET: api/Students
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
+        public async Task<ActionResult<IEnumerable<StudentViewVM>>> GetStudents()
         {
-            var students = await studentRepositories.GetAllAsync();
+            var students =mapper.Map<List<StudentViewVM>>(await studentRepositories.GetAllAsync());
             return students;
         }
 

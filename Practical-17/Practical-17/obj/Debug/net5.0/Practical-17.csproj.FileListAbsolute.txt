@@ -8,7 +8,6 @@ C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\ref\Practical-17.dll
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Practical-17.pdb
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Practical-17.Views.dll
-C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Practical-17.Views.pdb
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Humanizer.dll
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -135,3 +134,9 @@ C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\obj\Debug\net5.0\ref\Practical-17.dll
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\obj\Debug\net5.0\Practical-17.pdb
 C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\obj\Debug\net5.0\Practical-17.genruntimeconfig.cache
+C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\dhruvin\Documents\Asp.net\ASP.NET Core\Praticals\Practical-17\Practical-17\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

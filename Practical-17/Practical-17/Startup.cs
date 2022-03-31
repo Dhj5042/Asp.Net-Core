@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Practical_17.Configration;
 using Practical_17.Contracts;
 using Practical_17.Model;
 using Practical_17.Repositories;
@@ -43,7 +44,9 @@ namespace Practical_17
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositories<>));
             services.AddScoped(typeof(IStudentRepositories), typeof(StudentRepositories));
             services.AddMvc();
-           // services.AddControllersWithViews();
+
+            services.AddAutoMapper(typeof(MapperConfig));
+            // services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

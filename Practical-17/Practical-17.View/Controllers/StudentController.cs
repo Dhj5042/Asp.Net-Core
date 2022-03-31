@@ -18,13 +18,13 @@ namespace Practical_17.View.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<StudentData> students = new List<StudentData>();
+            List<StudentViewVM> students = new List<StudentViewVM>();
             HttpClient client = studentAPI.Initial();
             HttpResponseMessage res = await client.GetAsync("api/Students");
             if (res.IsSuccessStatusCode)
             {
                 var reslut = res.Content.ReadAsStringAsync().Result;
-                students = JsonConvert.DeserializeObject<List<StudentData>>(reslut);
+                students = JsonConvert.DeserializeObject<List<StudentViewVM>>(reslut);
             }
             return View(students);
         }

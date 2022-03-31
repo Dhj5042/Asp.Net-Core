@@ -8,5 +8,9 @@ namespace Practical_16.Web.Contracts
 {
     public interface IStudentRepositories:IGenericRepository<Student>
     {
+        //public string sendMessage()
+        //{
+        //    return "Send Message";
+        //}
     }
 }

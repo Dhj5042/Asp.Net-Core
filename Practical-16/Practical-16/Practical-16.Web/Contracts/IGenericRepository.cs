@@ -14,5 +14,7 @@ namespace Practical_16.Web.Contracts
         Task<bool> Exist(int id);
         Task DeleteAsync(int id);
         Task UpdateAsync(T entity);
+
+       
     }
 }

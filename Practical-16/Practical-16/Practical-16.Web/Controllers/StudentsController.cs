@@ -26,6 +26,8 @@ namespace Practical_16.Web.Controllers
         // GET: Students
         public async Task<IActionResult> Index()
         {
+          
+           //var data = studentRepositories.sendMessage();
             return View(await studentRepositories.GetAllAsync());
         }
 

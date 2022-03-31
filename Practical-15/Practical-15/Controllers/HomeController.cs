@@ -25,7 +25,7 @@ namespace Practical_15.Controllers
         {
             logger.LogInformation("Index method Called");
             logger.LogWarning("Index method Called Warning");
-            return new string[] { "Hello World"};
+            return new string[] { "Hello World" };
 
         }
     }
